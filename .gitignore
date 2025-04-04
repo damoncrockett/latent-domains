@@ -26,3 +26,5 @@ dist-ssr
 _notes.txt
 package.json
 public/images
+public/nn.json
+public/image_stems.json

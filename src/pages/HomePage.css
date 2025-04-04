@@ -14,65 +14,63 @@
 
 .experiment-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
   gap: 2rem;
   justify-content: center;
 }
 
 .experiment-card {
-  background-color: #333; /* Darker card background */
+  background-color: #333; 
   color: inherit;
   text-decoration: none;
-  border-radius: 15px; /* Rounded corners */
-  overflow: hidden; /* Keep image corners rounded */
+  border-radius: 15px; 
+  overflow: hidden; 
   text-decoration: none;
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   display: flex;
   flex-direction: column;
-  padding: 1.5rem; /* Padding inside the card */
+  padding: 1.5rem; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .experiment-card:hover {
-  transform: translateY(-5px); /* Slight lift on hover */
+  transform: translateY(-5px); 
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
 .card-image {
   width: 100%;
-  height: 180px; /* Fixed height for images */
-  object-fit: cover; /* Cover the area, might crop */
-  background-color: #444; /* Placeholder background for image area */
+  height: 180px; 
+  object-fit: cover; 
+  background-color: #444; 
   margin-bottom: 1rem;
-  border-radius: 8px; /* Slightly rounded corners for image */
+  border-radius: 8px; 
 }
 
 .card-title {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
-  font-weight: 600; /* Bolder title */
+  font-weight: 600; 
 }
 
 .card-blurb {
   font-size: 0.95rem;
-  color: #bbb; /* Slightly dimmer blurb text */
-  flex-grow: 1; /* Pushes title/blurb up if cards have different heights */
-  margin-bottom: 0; /* Remove default margin */
+  color: #bbb; 
+  flex-grow: 1; 
+  margin-bottom: 0; 
   font-family: Helvetica, Arial, sans-serif;
 }
 
-/* Adjust h1 styling if needed, moving from App.css */
 .home-page h1 {
-  font-size: 3rem; /* Larger main title */
+  font-size: 3rem; 
   font-weight: 600;
   margin-bottom: 1rem;
 }
 
-/* Links container styling */
 .links-container {
-  margin-bottom: 3.5rem; /* Increased margin from 2rem to 3.5rem to add more space before experiment cards */
+  margin-bottom: 3.5rem; 
   display: flex;
-  flex-direction: column; /* Changed to column to stack links vertically */
+  flex-direction: column; 
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
@@ -91,5 +89,5 @@
 }
 
 .link-divider {
-  display: none; /* Hide the divider since links are now stacked */
+  display: none;
 } 

@@ -4,8 +4,7 @@ import './HomePage.css';
 // Placeholder data for experiments
 const experiments = [
   { id: 'experiment-1', title: 'Met Public Art', blurb: '260k Met Objects in WebGPU', image: 'metpublic.jpg' },
-  { id: 'experiment-2', title: 'Midjourney Interpolation', blurb: 'Visual Search with VAE interpolation', image: '2001.jpg' },
-  // Add more experiments here
+  { id: 'experiment-2', title: 'Midjourney Explore', blurb: 'Visual Exploration By Nearest Neighbor Search in Diverse Feature Spaces', image: '2001.jpg' },
 ];
 
 function HomePage() {
@@ -27,8 +26,6 @@ function HomePage() {
             <p className="card-blurb">{exp.blurb}</p>
           </Link>
         ))}
-        {/* Placeholder for when no experiments are defined */}
-        {experiments.length === 0 && <p>No experiments available yet.</p>}
       </div>
     </div>
   );
